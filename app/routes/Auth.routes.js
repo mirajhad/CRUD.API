@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const AuthController = require('../controllers/Auth.controller.js');
-const middleware = require('../middleware/Auth.middleware.js');
+const AuthController = require('../app/controllers/Auth.controller.js.js');
+const middleware = require('../app/middleware/Auth.middleware.js.js');
 
 // Define routes
 router.get('/login', AuthController.loginPage);

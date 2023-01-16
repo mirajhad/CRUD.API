@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const DashboardController = require('../controllers/Dashboard.controller.js');
-const middleware = require('../middleware/Auth.middleware.js');
+const DashboardController = require('../app/controllers/Dashboard.controller.js.js');
+const middleware = require('../app/middleware/Auth.middleware.js.js');
 
 // Define routes
 router.get('/', middleware.isAuthenticated, DashboardController.index);

@@ -1,5 +1,5 @@
-const appConfig = require('./app.config.js');
-const dbConfig = require('./db.config.js');
+const appConfig = require('./app.config.js.js');
+const dbConfig = require('./db.config.js.js');
 const appKeys = require('./app.keys.js');
 const dbKeys = require('./db.keys.js');
 
