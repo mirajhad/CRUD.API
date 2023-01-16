@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
-// const config = require('./app/config/init.js');
-
-// config.init();
+require('dotenv').config();
 const appConfig = require('./app/config/app.conf');
 require('./app/middleware/init')(app);
+
+// connect to mongodb
+require('./app/database/Mongo.database');
 
 
 // app.get('/users', UserController.index);
