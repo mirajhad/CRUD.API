@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbConfig = require('../config/db.config.js');
+const dbConfig = require('../app/config/db.config.js.js');
 
 // Connect to the MongoDB
 mongoose.connect(`mongodb://${dbConfig.host}:${dbConfig.port}/${dbConfig.name}`, { useNewUrlParser: true, useUnifiedTopology: true });
