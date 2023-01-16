@@ -1,16 +1,11 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
-const config = require('./app/config/init.js');
+// const config = require('./app/config/init.js');
 
-config.init();
+// config.init();
+const appConfig = require('./app/config/app.conf');
 require('./app/middleware/init')(app);
 
-
-
-
-
-config.init();
 
 // app.get('/users', UserController.index);
 // app.post('/users', UserController.create);
@@ -23,7 +18,7 @@ config.init();
 const appRoutes = require('./app/routes/App.routes');
 app.use('/', appRoutes);
 
-app.listen(3000, function() {
-    console.log('Server started on port 3000');
+app.listen(appConfig.port, () => {
+    console.log('Server is running on port', appConfig.port);
 });
 

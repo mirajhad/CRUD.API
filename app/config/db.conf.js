@@ -2,9 +2,11 @@ const env = process.env.NODE_ENV || 'development';
 
 const config = {
   development: {
+    // for local mongodb
     host: 'localhost',
     port: 27017,
     name: 'dev_db'
+    
   },
   test: {
     host: 'localhost',
