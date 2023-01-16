@@ -2,8 +2,8 @@ const env = process.env.NODE_ENV || 'development';
 
 const config = {
   development: {
-    dbUsername: 'development_username',
-    dbPassword: 'development_password'
+    dbUsername: '',
+    dbPassword: ''
   },
   test: {
     dbUsername: 'test_username',
