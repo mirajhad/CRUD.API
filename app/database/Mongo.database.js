@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
 const dbConfig = require('../config/db.conf');
 
+mongoose.set('strictQuery', true)
+
 // Connect to the MongoDB
 mongoose.connect(`mongodb://${dbConfig.host}:${dbConfig.port}/${dbConfig.name}`, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 // Get the connection
 const db = mongoose.connection;
