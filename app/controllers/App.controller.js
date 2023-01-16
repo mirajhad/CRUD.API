@@ -1,4 +1,8 @@
-const App = require('../models/App.model');
+const App = require('../models/User.model');
+
+exports.health = function(req, res) {
+    res.status(200).json({ message: ' Health OK' });
+};
 
 exports.index = function(req, res) {
     App.find({}, function(err, apps) {

@@ -1,6 +1,6 @@
 const User = require('../models/User.model');
 const jwt = require('jsonwebtoken');
-const config = require('../config');
+const config = require('../config/init');
 
 exports.index = function(req, res) {
     User.find({}, function(err, users) {

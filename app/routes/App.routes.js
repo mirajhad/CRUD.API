@@ -4,7 +4,8 @@ const AppController = require('../controllers/App.controller.js');
 
 // Define routes
 router.get('/', AppController.index);
-router.get('/about', AppController.about);
-router.get('/contact', AppController.contact);
+// router.get('/user', AppController.index);
+// router.get('/about', AppController.about);
+// router.get('/contact', AppController.contact);
 
 module.exports = router;

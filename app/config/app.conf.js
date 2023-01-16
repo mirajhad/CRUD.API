@@ -1,8 +1,9 @@
+require("dotenv").config();
 const env = process.env.NODE_ENV || 'development';
 
 const config = {
   development: {
-    port: 3000,
+    port: process.env.DEV_PORT || 3000,
     sessionSecret: 'development_secret',
     corsOrigin: 'http://localhost:4200'
   },
