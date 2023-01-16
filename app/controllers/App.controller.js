@@ -1,4 +1,4 @@
-const App = require('../models/App.model');
+const App = require('../models/User.model');
 
 exports.index = function(req, res) {
     App.find({}, function(err, apps) {
