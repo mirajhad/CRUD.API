@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-const config = require('./config');
 const mongoose = require('mongoose');
+const config = require('./app/config/init.js');
 
-require('./middleware/init')(app);
+config.init();
+require('./app/middleware/init')(app);
 
 
 
-const config = require('./config/init.js');
+
 
 config.init();
 

@@ -1,7 +1,7 @@
-const appConfig = require('./app.config.js.js');
-const dbConfig = require('./db.config.js.js');
-const appKeys = require('./app.keys.js');
-const dbKeys = require('./db.keys.js');
+const appConfig = require('./app.conf');
+const dbConfig = require('./db.conf');
+const appKeys = require('./app.keys');
+const dbKeys = require('./db.keys');
 
 module.exports = {
   init: () => {
