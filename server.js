@@ -18,8 +18,6 @@ require('./app/database/Mongo.database');
 
 const appRoutes = require('./app/routes/App.routes');
 app.use('/api', appRoutes);
-app.use('/api', appRoutes);
-app.use('/api', appRoutes);
 
 app.listen(appConfig.port, () => {
     console.log('Server is running on port', appConfig.port);

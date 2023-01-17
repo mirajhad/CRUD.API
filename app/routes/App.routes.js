@@ -5,8 +5,8 @@ const UserController = require('../controllers/User.controller.js');
 
 // Define routes
 router.get('/health', AppController.health);
-router.get('/user', UserController.create);
-router.get('/getusers', UserController.readAll);
+router.post('/create-user', UserController.create);
+router.get('/get-users', UserController.readAll);
 // router.get('/about', AppController.about);
 // router.get('/contact', AppController.contact);
 
