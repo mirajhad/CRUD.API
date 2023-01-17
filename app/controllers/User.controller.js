@@ -25,6 +25,13 @@ exports.read = function(req, res) {
     });
 };
 
+exports.readAll = function(req, res){
+    User.find({}, function(err, users) {
+        if (err) return res.status(500).send(err);
+        res.status(200).json(users);
+    });
+}
+
 exports.update = function(req, res) {
     User.findByIdAndUpdate(req.params.id, req.body, { new: true }, function(err, user) {
         if (err) return res.status(500).send(err);
